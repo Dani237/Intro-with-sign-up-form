@@ -1,0 +1,24 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%); 
+    --blue: hsl(248, 32%, 49%);
+
+    --d-blue: hsl(249, 10%, 26%);
+    --g-blue: hsl(246, 25%, 77%);
+
+    --principal-font: 'Poppins', sans-serif;
+}
+
+/* GLOBALS */
+html  {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after { box-sizing: inherit; }
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: var(--principal-font);
+}
+img { max-width: 100%; }
+h1, p { margin: 0; }
