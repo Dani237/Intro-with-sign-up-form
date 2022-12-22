@@ -27,6 +27,14 @@ h1, p { margin: 0; }
 /* UTILITIES */
 .flex { display: flex; }
 .shadow { box-shadow: 0px 8px rgba(40, 40, 40, 0.2); }
+.error-message {
+    text-align: right;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--red);
+    margin-right: .3rem;
+    font-weight: 500;
+}
 
 /* MAIN */
 main {
@@ -60,10 +68,7 @@ main {
 
 /* FORM SECTION*/
 .form-section { width: 100%; }
-.advice, .form {
-    max-width: 100%;
-    border-radius: 1rem;
-}
+.advice, .form { border-radius: 1rem; }
 
 /* advice */
 .advice, input { padding: 2rem 3rem; }
@@ -83,16 +88,32 @@ main {
     flex-direction: column;
     align-items: stretch;
 }
+.input-content { 
+    margin-top: 2rem; 
+    flex-direction: column;
+    position: relative;
+}
 input {
-    margin-bottom: 2rem;
+    width: 100%;
     font-weight: 600;
     border: 1px solid rgb(150, 150, 150);
     border-radius: .6rem;
 }
+.input-content:nth-child(1) { margin-top: 0; }
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
     outline-color: var(--blue);
     caret-color: var(--blue);
 }
+.input-error {
+    background-image: url(../images/icon-error.svg);
+    width: 2.4rem;
+    height: 2.4rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 3rem;
+    top: 1.8rem;
+}
+
 .btn {
     background-color: var(--green);
     color: white;    
@@ -100,8 +121,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     border: none;
     cursor: pointer;
     border-bottom: 4px solid hsl(154, 66%, 40%);
+    margin: 2rem auto;
 }
-.btn:hover { filter: opacity(.7); }
+.btn:active, .btn:hover { filter: opacity(.7); }
 
 /* terms */
 .terms-text {
@@ -121,6 +143,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         padding: 0;
     }
     .title { font-size: 3rem; }
-    .advice { padding: 2rem 8rem; }
+    .advice { padding: 2rem 7rem; }
     .form { padding: 2.5rem; }
+    .btn:hover { filter: opacity(1); }
 }

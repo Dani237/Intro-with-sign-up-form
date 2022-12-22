@@ -22,20 +22,32 @@
     <div class="content flex">
       <div class="pitch-message">
         <h1 class="title">Learn to code by watching others</h1>
-        <p class="description">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-          but understanding how developers think is invaluable. </p>
+        <p class="description">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
       </div>
       <div class="form-section">
         <div class="advice shadow">
           <span class="advice-span">Try it free 7 days</span> then $20/mo. thereafter
         </div>
         <div class="form shadow">
-          <form action="#" class="form-elements flex">
-            <input type="text" placeholder="First Name" required>
-            <input type="text" placeholder="Last Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="password" placeholder="Password" required>
-            <input type="submit" value="Claim your free trial" class="btn">
+          <form class="form-elements flex" novalidate>
+            <div class="input-content flex">
+              <input class="firstName" type="text" placeholder="First Name" required>
+            <div class="input-error" hidden></div>
+            </div>
+            <div class="input-content">
+              <input class="lastName" type="text" placeholder="Last Name" required>
+            <div class="input-error" hidden></div>
+            </div>
+            <div class="input-content">
+              <input class="email" type="email" placeholder="Email Address" required>
+            <div class="input-error" hidden></div>
+            </div>
+            <div class="input-content">
+              <input class="password" type="password" placeholder="Password" required>
+              <div class="input-error" hidden></div>
+            </div>
+
+            <input class="btn submit" type="submit" value="Claim your free trial">
           </form>
           <div class="terms">
             <p class="terms-text">By clicking the button, you are agreeing to our <span class="terms-span">Terms and Services</span></p>
@@ -53,5 +65,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+
+  <script src="js/app.js"></script>
 </body>
 </html>
