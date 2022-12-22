@@ -7,8 +7,11 @@
     --g-blue: hsl(246, 25%, 77%);
 
     --principal-font: 'Poppins', sans-serif;
-}
-
+} 
+@font-face { 
+    font-family: Helvetica; 
+    font-display: swap; 
+} 
 /* GLOBALS */
 html  {
     box-sizing: border-box;
